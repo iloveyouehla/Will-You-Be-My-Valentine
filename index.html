@@ -54,7 +54,7 @@
       <div id="responseButtons" class="flex gap-4 pt-5 items-center">
         <button
           id="yesButton"
-          class="bounce inline-flex items-center justify-center whitespace-normal break-words rounded-md text-xl font-medium cursor-pointer px-4 py-2 bg-green-500 text-white transition-all duration-300 ease-in-out hover:bg-green-400 min-h-12 min-w-[75px]"
+          class="bounce inline-flex items-center justify-center whitespace-normal break-words rounded-md text-xl font-medium cursor-pointer px-4 py-2 bg-green-500 text-white transition-all duration-300 ease-in-out hover:bg-green-400 min-h-12 min-w-[75px] max-w-[200px] text-center"
         >
           Jee Ali
         </button>
@@ -78,9 +78,9 @@
       const responseButtons = document.getElementById('responseButtons');
 
       // Configuration
-      const GROWTH_PER_CLICK = 35;
-      const FONT_GROWTH_PER_CLICK = 25;
-      const MAX_NO_CLICKS = 5;
+      const GROWTH_PER_CLICK = 10;
+      const FONT_GROWTH_PER_CLICK = 5;
+      const MAX_NO_CLICKS = NO_BUTTON_MESSAGES.length - 1;
 
       const IMAGE_PATHS = [
         './images/image1.gif',
@@ -170,5 +170,6 @@
   </script>
 </body>
 </html>
+
 
 
